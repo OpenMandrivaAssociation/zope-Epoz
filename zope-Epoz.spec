@@ -1,23 +1,24 @@
-%define product         Epoz
-%define version         2.0.2
-%define release         3
+%define Product Epoz
+%define product epoz
+%define name    zope-%{Product}
+%define version 2.0.2
+%define release %mkrel 4
 
 %define zope_minver     2.7
-
 %define zope_home       %{_prefix}/lib/zope
 %define software_home   %{zope_home}/lib/python
 
-Summary:        Epoz allows you to edit Zope-objects with a wysiwyg-editor
-Name:           zope-%{product}
-Version:        %{version}
-Release:        %mkrel %{release}
-License:        GPL
-Group:          System/Servers
-Source:         http://mjablonski.zope.de/Epoz/releases/Epoz-%{version}.tar.bz2
-URL:            http://mjablonski.zope.de/Epoz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildArch:      noarch
-Requires:       zope >= %{zope_minver}
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
+Summary:    Epoz allows you to edit Zope-objects with a wysiwyg-editor
+License:    GPL
+Group:      System/Servers
+URL:        http://mjablonski.zope.de/Epoz
+Source:     http://mjablonski.zope.de/Epoz/releases/Epoz-%{version}.tar.bz2
+Requires:   zope >= %{zope_minver}
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 No plugins are required. You only have to use a recent browser (IE >= 5.5, 
@@ -51,8 +52,5 @@ if [ -f "%{_prefix}/bin/zopectl" ] && [ "`%{_prefix}/bin/zopectl status`" != "da
 fi
 
 %files
-%defattr(0644, root, root, 0755)
+%defattr(-,root,root)
 %{software_home}/Products/*
-
-
-
