@@ -18,7 +18,6 @@ URL:        http://mjablonski.zope.de/Epoz
 Source:     http://mjablonski.zope.de/Epoz/releases/Epoz-%{version}.tar.bz2
 Requires:   zope >= %{zope_minver}
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 No plugins are required. You only have to use a recent browser (IE >= 5.5, 
