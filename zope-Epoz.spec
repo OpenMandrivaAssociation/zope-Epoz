@@ -2,7 +2,7 @@
 %define product epoz
 %define name    zope-%{Product}
 %define version 2.0.2
-%define release %mkrel 7
+%define release %mkrel 8
 
 %define zope_minver     2.7
 %define zope_home       %{_prefix}/lib/zope
