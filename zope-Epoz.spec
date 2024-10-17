@@ -14,7 +14,7 @@ Release:	%{release}
 Summary:    Epoz allows you to edit Zope-objects with a wysiwyg-editor
 License:    GPL
 Group:      System/Servers
-URL:        http://mjablonski.zope.de/Epoz
+URL:        https://mjablonski.zope.de/Epoz
 Source:     http://mjablonski.zope.de/Epoz/releases/Epoz-%{version}.tar.bz2
 Requires:   zope >= %{zope_minver}
 BuildArch:  noarch
